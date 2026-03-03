@@ -51,3 +51,9 @@ function add_course($course_name)
     $statement->execute();
     $statement->closeCursor();
 }
+
+// update courses
+function update_course($course_id, $course_name)
+{
+
+}
