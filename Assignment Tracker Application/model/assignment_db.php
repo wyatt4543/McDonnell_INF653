@@ -44,6 +44,7 @@ function add_assignment($course_id, $description)
     $statement->closeCursor();
 }
 
+// update assignments
 function update_assignment($assignment_id, $description, $course_id)
 {
     global $db;
@@ -58,6 +59,7 @@ function update_assignment($assignment_id, $description, $course_id)
     $statement->closeCursor();
 }
 
+// helper function to pre-fill update form
 function get_assignment($assignment_id) {
     global $db;
     $query = 'SELECT * FROM assignments WHERE ID = :assignment_id';
