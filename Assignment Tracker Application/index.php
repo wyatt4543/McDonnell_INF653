@@ -38,6 +38,26 @@ switch ($action) {
             exit();
         }
         break;
+    case "show_update_form":
+    if ($assignment_id) {
+        $assignment = get_assignment($assignment_id);
+        $courses = get_courses();
+        include('view/update_assignment.php');
+    } else {
+        $error = "Missing or incorrect assignment id.";
+        include('view/error.php');
+    }
+    break;
+    case "update_assignment":
+        if ($assignment_id && $course_id && !empty($description)) {
+            update_assignment($assignment_id, $description, $course_id);
+            header("Location: .?action=list_assignments&course_id=" . $course_id);
+            exit();
+        } else {
+            $error = "Invalid assignment data. Check all fields and try again.";
+            include("view/error.php");
+        }
+        break;
     case "delete_course":
         if ($course_id) {
             try {
