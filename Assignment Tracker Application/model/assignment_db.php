@@ -43,3 +43,8 @@ function add_assignment($course_id, $description)
     $statement->execute();
     $statement->closeCursor();
 }
+
+function update_assignment($assignment_id, $description, $course_id)
+{
+
+}
