@@ -3,7 +3,7 @@ require_once('model/database.php');
 require_once('model/assignment_db.php');
 require_once('model/course_db.php');
 
-$assignment_id = filter_input(INPUT_POST, 'assignment_id', FILTER_VALIDATE_INT);
+$assignment_id = filter_input(INPUT_POST, 'assignment_id', FILTER_VALIDATE_INT) ?: filter_input(INPUT_GET, 'assignment_id', FILTER_VALIDATE_INT);
 $description = filter_input(INPUT_POST, 'description', FILTER_SANITIZE_SPECIAL_CHARS);
 $course_name = filter_input(INPUT_POST, 'course_name', FILTER_SANITIZE_SPECIAL_CHARS);
 
@@ -39,15 +39,15 @@ switch ($action) {
         }
         break;
     case "show_update_form":
-    if ($assignment_id) {
-        $assignment = get_assignment($assignment_id);
-        $courses = get_courses();
-        include('view/update_assignment.php');
-    } else {
-        $error = "Missing or incorrect assignment id.";
-        include('view/error.php');
-    }
-    break;
+        if ($assignment_id) {
+            $assignment = get_assignment($assignment_id);
+            $courses = get_courses();
+            include('view/update_assignment.php');
+        } else {
+            $error = "Missing or incorrect assignment id.";
+            include('view/error.php');
+        }
+        break;
     case "update_assignment":
         if ($assignment_id && $course_id && !empty($description)) {
             update_assignment($assignment_id, $description, $course_id);
