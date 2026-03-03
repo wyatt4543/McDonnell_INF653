@@ -55,6 +55,25 @@ include('view/header.php');
     </form>
 </section>
 
+<!-- Inside the foreach ($assignments as $assignment) loop in assignment_list.php -->
+<div class="assignment-item">
+    <p><strong><?= htmlspecialchars($assignment['courseName']) ?></strong></p>
+    <p><?= htmlspecialchars($assignment['Description']) ?></p>
+    
+    <!-- Existing Delete Form -->
+    <form action="." method="post" style="display:inline;">
+        <input type="hidden" name="action" value="delete_assignment">
+        <input type="hidden" name="assignment_id" value="<?= $assignment['ID'] ?>">
+        <button type="submit" class="remove-button" onclick="return confirm('Are you sure?')">X</button>
+    </form>
+
+    <!-- NEW: Edit Button -->
+    <form action="." method="get" style="display:inline;">
+        <input type="hidden" name="action" value="show_update_form">
+        <input type="hidden" name="assignment_id" value="<?= $assignment['ID'] ?>">
+        <button type="submit">Edit</button>
+    </form>
+</div>
 
 <p><a href=".?action=list_courses">View/Edit Courses</a></p>
 
