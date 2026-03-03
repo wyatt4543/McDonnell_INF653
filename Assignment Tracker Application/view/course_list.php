@@ -16,7 +16,14 @@ include("view/header.php");
                     <p class="bold"><?= htmlspecialchars($course['courseName']) ?></p>
                 </div>
                 <div class="list__removed">
+                    <!-- Edit Button-->
+                    <form action="." method="get" style="display:inline;">
+                        <input type="hidden" name="action" value="show_course_edit">
+                        <input type="hidden" name="course_id" value="<?= $course['courseID'] ?>">
+                        <button class="edit-button">Edit</button>
+                    </form>
 
+                    <!-- Delete Form -->
                     <form action="." method="post">
                         <input type="hidden" name="action" value="delete_course">
                         <input type="hidden" name="course_id" value="<?= $course['courseID'] ?>">
