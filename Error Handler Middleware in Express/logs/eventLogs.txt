@@ -24,3 +24,12 @@ cd988432-5415-4804-bb35-bde4bf033509 	 [2025-04-02 11:06:33] 	 GET request to /a
 fa32e289-9601-4a11-98d6-1b1966cead0a 	 [2025-04-02 11:06:44] 	 GET request to /assets/styles.css
 081177cd-f98f-4c3e-a5c4-272e639cd58b 	 [2025-04-02 11:06:44] 	 GET request to /assets/logo.png
 2b18f6f2-4c11-4f81-8836-66ede16b6cb3 	 [2025-04-02 11:06:44] 	 GET request to /assets/script.js
+e62012b2-7ae3-4a48-813c-467cf3f81e2b 	 [2026-04-06 12:38:08] 	 GET request to /
+d2c460c4-0e4b-4df4-80ca-d815f771791e 	 [2026-04-06 12:38:08] 	 GET request to /favicon.ico
+49c2856d-069e-4bba-b86b-2510afdcc8ff 	 [2026-04-06 12:38:12] 	 GET request to /about.html
+e55c8ca5-d3c0-4548-a84a-e90b4d52b6d4 	 [2026-04-06 12:38:14] 	 GET request to /
+c14ec251-681c-43d8-953d-c785aa3fb1cb 	 [2026-04-06 12:38:16] 	 GET request to /favicon.ico
+ebaf6ff0-9320-4a24-8c26-3023eef2c8f2 	 [2026-04-06 12:38:22] 	 GET request to /about.html
+ac766fb3-aa02-4c61-a663-da0e5e50a2bd 	 [2026-04-06 12:38:24] 	 GET request to /
+da101aeb-cba7-4ac6-8f51-30344d60d3fa 	 [2026-04-06 12:38:31] 	 GET request to /about.ht
+d5435fc0-1717-4282-939d-6a8b3ac3c815 	 [2026-04-06 12:38:34] 	 GET request to /
