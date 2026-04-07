@@ -1,2 +1,2 @@
 # ignore files related to node.js in the Error Handler assignment
-/"Error Handler Middleware in Express"/node_modules
+/Error\ Handler\ Middleware\ in\ Express/node_modules
