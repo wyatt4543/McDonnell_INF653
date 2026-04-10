@@ -80,11 +80,17 @@ app.get(
   },
 );
 
+// This route intentionally throws an error to test your middleware
+app.get("/trigger-error", (req, res) => {
+    throw new Error("This is a test error for the custom error handler!");
+});
+
 app.get("/*splat", (req, res) => {
   res.sendFile(path.join(__dirname, "views", "404.html"));
 });
 
 //Custom error middleware function
+app.use(errorHandler)
 
 app.listen(PORT, () => {
   console.log(`Server is running on http://localhost:${PORT}`);
