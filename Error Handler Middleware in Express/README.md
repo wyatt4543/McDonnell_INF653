@@ -13,11 +13,16 @@ This project includes a custom error handler middleware that captures applicatio
    Ensure you have `express`, `date-fns`, and `uuid` installed:
    ```bash
    npm install express date-fns uuid
-2. **Trigger an Error**:
+
+2. **Start the Server**:
+   ```bash
+   node expressServer.js
+
+3. **Trigger an Error**:
    Open your web browser and go to:
    http://localhost:3000/trigger-error
 
-3. **Verify Results**:
+4. **Verify Results**:
    Client Response: Your browser should display the message: "This is a test error for the custom error handler!"
    Console Output: Check your terminal to see the full error stack trace.
    Log Files: Open the logs/errorLog.txt file. You should see a new entry with a timestamp and the error details. 
