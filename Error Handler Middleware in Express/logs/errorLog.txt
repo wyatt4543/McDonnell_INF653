@@ -1,0 +1,1 @@
+d4be6f49-d3bb-4777-b650-53c578f06c94 	 [2026-04-10 17:51:53] 	 Error: This is a test error for the custom error handler! 	 GET /trigger-error
