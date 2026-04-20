@@ -1,0 +1,3 @@
+# ignore files for the student management API
+node_modules
+.env
