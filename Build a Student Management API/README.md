@@ -28,4 +28,4 @@ GET	/students	Retrieve all student records<br>
 GET	/students/:id	Retrieve a single student by ID<br>
 POST	/students	Create a new student record<br>
 PUT	/students/:id	Update an existing student<br>
-DELETE	/students/:id	Delete a student record<br>
+DELETE	/students/:id	Delete a student record
