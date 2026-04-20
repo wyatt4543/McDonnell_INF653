@@ -11,7 +11,7 @@ A backend application built with Node.js, Express.js, and MongoDB. This applicat
     ```bash
     npm install
 
-3. **configure environment variables**\n
+3. **configure environment variables** <br>
     Create a .env file in the root directory and add your credentials:
     ```bash
     PORT=5000
