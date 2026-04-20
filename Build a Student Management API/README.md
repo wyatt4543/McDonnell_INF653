@@ -11,7 +11,7 @@ A backend application built with Node.js, Express.js, and MongoDB. This applicat
     ```bash
     npm install
 
-3. **configure environment variables** <br>
+3. **configure environment variables**<br>
     Create a .env file in the root directory and add your credentials:
     ```bash
     PORT=5000
@@ -23,9 +23,9 @@ A backend application built with Node.js, Express.js, and MongoDB. This applicat
     npx nodemon server.js
 
 ## API Endpoints
-Method	Endpoint	Description
-GET	/students	Retrieve all student records
-GET	/students/:id	Retrieve a single student by ID
-POST	/students	Create a new student record
-PUT	/students/:id	Update an existing student
-DELETE	/students/:id	Delete a student record
+Method	Endpoint	Description<br>
+GET	/students	Retrieve all student records<br>
+GET	/students/:id	Retrieve a single student by ID<br>
+POST	/students	Create a new student record<br>
+PUT	/students/:id	Update an existing student<br>
+DELETE	/students/:id	Delete a student record<br>
